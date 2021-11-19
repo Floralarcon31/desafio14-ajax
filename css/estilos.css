@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=================================================*/
+/*====================NAVBAR=======================*/
+/*=================================================*/
+
+.navbar {
+  background: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+ .nav-link {
+  color: dodgerblue;
+  font-family: "Rubik", sans-serif;
+}
+ .nav-link:hover {
+  color: #1c3e5f;
+}
+
+
+header, .alert{
+  z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 416px) {
+  .titulo__h2 {
+    font-size: 25px;
+  }
+}
+
+/*=================================================*/
+/*================= FIN NAVBAR ====================*/
+/*=================================================*/
+
+body{
+  background-color: floralwhite;
+}
+
+/*=================================================*/
+/*============== CORDOBA / CARRITO =================*/
+/*=================================================*/
+
+.description{
+  height: 25px;
+  overflow: hidden;
+  transition: height .3s ease-in .3s;
+}
+.description:hover{
+  height: 80px;
+}
+.carrito{
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.table__productos{
+  display: flex;
+}
+.table__productos > img{
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.table__cantidad > input{
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+/*alert*/
+.hide, .remove{
+  display: none;
+
+}
+
+
+/*=================================================*/
+/*============  FIN CORDOBA / CARRITO ==============*/
+/*=================================================*/
+
+
+/*=================================================*/
+/*====================LEGALES=======================*/
+/*=================================================*/
+
+.titleLegales h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    bottom: 30px;
+    color: #0a2036;
+  }
+  
+  section .container {
+    text-align: justify;
+    height: 1800px;
+    padding: 10px;
+  }
+  section .container p {
+    line-height: 1.4;
+    font-size: 13px;
+  }
+/*================= RESPONSIVE LEGALES ====================*/
+  @media (max-width: 576px) and (min-width: 360px) {
+    .container {
+      text-align: justify;
+      height: 600px;
+    }
+    .container .legalesCelu {
+      display: none;
+    }
+    .container p {
+      line-height: 1;
+      font-size: 13px;
+    }
+  }
+  
+/*=================================================*/
+/*================= FIN LEGALES ====================*/
+/*=================================================*/
+
+/*=================================================*/
+/*====================DOLAR=======================*/
+/*=================================================*/
+#dolarCambio{
+  margin-bottom: 40px;
+}
+#containerBOX{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+/*button*/
+#monedaEXT{
+  height: 60px;
+  width: 120px;
+  margin: -50px -50px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background-color: dodgerblue;
+  color: whitesmoke;
+  border-radius: 30px 0px 30px 0px;
+  border-radius: 30px 0px 30px 0px;
+  -moz-border-radius: 30px 0px 30px 0px;
+  -webkit-border-radius: 30px 0px 30px 0px;
+  border: 2px solid #5878ca;
+
+}
+
+.dolarCompra{
+  bottom: 10px;
+  padding: 20px;
+   margin: 30px;
+  background-color: green;
+  color: whitesmoke;
+  overflow: hidden;
+ text-align: center;
+ 
+}
+
+.dolarVenta{
+  bottom: 10px;
+  padding: 20px;
+   margin: 30px;
+   background-color: red;
+   color: whitesmoke;
+   overflow: hidden;
+  text-align: center;
+ }
+ /*================= RESPONSIVE DOLAR ====================*/
+ @media (max-width: 400px)  {
+  #dolarCambio{
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+  
+  /*button*/
+  #monedaEXT{
+    height: 40px;
+    width: 100px;
+  
+  }
+}
+
+/*=================================================*/
+/*================== FIN DOLAR =====================*/
+/*=================================================*/
+
+
+
+
